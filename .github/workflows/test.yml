@@ -19,3 +19,7 @@ jobs:
 
       - name: Show system info
         run: uname -a
+
+      - name: shell commands
+        run: git clone https://github.com/saikiran-private/branches.git && cd branches && ls -lrt
+        

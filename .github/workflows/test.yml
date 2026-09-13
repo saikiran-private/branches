@@ -1,0 +1,21 @@
+name: Hello World
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello GitHub Actions!"
+
+      - name: Show the date
+        run: date
+
+      - name: Show the current directory
+        run: pwd
+
+      - name: Show system info
+        run: uname -a
